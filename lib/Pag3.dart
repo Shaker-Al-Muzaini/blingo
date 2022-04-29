@@ -27,7 +27,7 @@ ChetUser({
   required this.img,
 
 });
-
+  
 }
 
 // ignore: camel_case_types, must_be_immutable
