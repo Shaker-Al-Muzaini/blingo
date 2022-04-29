@@ -1,7 +1,9 @@
+// ignore: unused_import
+//import 'package:blingo/ConterScrren.dart';
 import 'package:flutter/material.dart';
- import 'package:blingo/Home_Page.dart';
+ //import 'package:blingo/Home_Page.dart';
 
-//import 'Pag2.dart';
+import 'Page4.dart';
 //import 'Pag3.dart';
 
 void main() {
@@ -13,9 +15,9 @@ class  MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
    
-    return   MaterialApp(
+    return  const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Home_Page(),
+      home: Page4(),
     );
 
   }

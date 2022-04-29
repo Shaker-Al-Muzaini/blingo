@@ -17,7 +17,7 @@ class StoryDate{
 
 class ChetUser{
   late final String name;
-  late final String object;
+   String? object;
   late final String time;
   late final String img;
 ChetUser({
@@ -27,7 +27,7 @@ ChetUser({
   required this.img,
 
 });
-
+  
 }
 
 // ignore: camel_case_types, must_be_immutable
@@ -271,7 +271,7 @@ class massager_Secern   extends StatelessWidget {
 
              Expanded(
                child: Text(
-                   date.object+date.time,
+                   date.object!+date.time,
                    maxLines:1,
                    overflow:TextOverflow.ellipsis,
                    style: const TextStyle(color:Colors.white,fontSize:13)),
