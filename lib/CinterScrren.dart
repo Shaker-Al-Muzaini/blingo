@@ -13,7 +13,6 @@ class _CinterScrrenState extends State<CinterScrren> {
 
     super.initState();
   }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
