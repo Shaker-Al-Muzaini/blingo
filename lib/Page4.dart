@@ -6,7 +6,6 @@ class Page4 extends StatefulWidget {
   State<Page4> createState() => _Page4State();
 }
 class _Page4State extends State<Page4> {
-
   // Color? color =const Color.fromRGBO(8,83,93,100);
   bool? IsMael=true;
   double? height=60;
