@@ -6,7 +6,6 @@ class Date{
   Date({
     required this.name,
     required this.opject,
-
   });
 }
 // ignore: camel_case_types, must_be_immutable
