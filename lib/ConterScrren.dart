@@ -7,7 +7,6 @@ class CinterScrren extends StatefulWidget {
 }
 class _CinterScrrenState extends State<CinterScrren> {
   int cont =1;
-
   @override
   void initState() {
 
