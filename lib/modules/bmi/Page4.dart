@@ -1,4 +1,7 @@
 // ignore_for_file: file_names, avoid_print, non_constant_identifier_names
+import 'dart:math';
+
+import 'package:blingo/modules/bmi/bmi-r.dart';
 import 'package:flutter/material.dart';
 class Page4 extends StatefulWidget {
   const Page4({Key? key}) : super(key: key);
@@ -204,6 +207,7 @@ class _Page4State extends State<Page4> {
                                           Weg++;
                                           });
                                           },
+                                      heroTag: 'Weg+',
                                           child:const Icon(Icons.add,
                                             color:Colors.white,
                                             size:30,),
@@ -218,6 +222,7 @@ class _Page4State extends State<Page4> {
                                           Weg--;
                                         });
                                       },
+                                      heroTag: 'Weg-',
                                       child:const Icon(Icons.remove,
                                           color:Colors.white,
                                           size:30),
@@ -266,6 +271,7 @@ class _Page4State extends State<Page4> {
                                           Age++;
                                         });
                                       },
+                                      heroTag:'Age+',
                                       child:const Icon(Icons.add,
                                         color:Colors.white,
                                         size:30,),
@@ -280,6 +286,7 @@ class _Page4State extends State<Page4> {
                                           Age--;
                                         });
                                       },
+                                      heroTag: 'Age-',
                                       child:const Icon(Icons.remove,
                                           color:Colors.white,
                                           size:30),
@@ -308,7 +315,14 @@ class _Page4State extends State<Page4> {
               width:double.infinity,
               child: MaterialButton(
 
-                onPressed:(){},
+                onPressed:(){
+                  var  result = Weg/pow(height!/100,2);
+                  print(result);
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder:(cosntxt)=>Bmi_r(IsMael: IsMael,
+                        Age: Age, result: result)));
+                },
                 child:const Text('Shaker',
                 style:TextStyle(
                   color:Colors.white,

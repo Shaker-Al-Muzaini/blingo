@@ -1,34 +1,7 @@
-// ignore: file_names
-// ignore_for_file: use_key_in_widget_constructors
+// ignore_for_file: use_key_in_widget_constructors, file_names
+import 'package:blingo/models/users/user_info_dart.dart';
 import 'package:flutter/material.dart';
 // ignore: camel_case_types
-
-class StoryDate{
-
-  // ignore: non_constant_identifier_names
-  late final String name_user;
-
-  StoryDate({
-   // ignore: non_constant_identifier_names
-   required this.name_user,
-  });
-
-}
-
-class ChetUser{
-  late final String name;
-   String? object;
-  late final String time;
-  late final String img;
-ChetUser({
-  required this.name,
-  required this.object,
-  required this.time,
-  required this.img,
-
-});
-  
-}
 
 // ignore: camel_case_types, must_be_immutable
 class massager_Secern   extends StatelessWidget {
